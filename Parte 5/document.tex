@@ -1,0 +1,30 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage{amssymb}
+\begin{document}
+	\setcounter{section}{4}
+\section{Un criterio para la ortogonalidad}
+En esta secci\'on, daremos otra prueba del hecho 8 e introduciremos un criterio computacional muy \'util para la ortogonalidad.
+\\\\
+\textbf{Hecho 9 (Muy \'Util)}. Sean $A, B, C, D$ puntos en el plano. Asuma que $A \ne B$ y $C \ne D$. Luego las l\'ineas $AB$ y $CD$ son perpendiculares si y solo si $AC^2 + BD^2 = AD^2 +BC^2$.
+\\\\
+$Prueba$. El resultado sale inmediatamente de la siguiente identidad.
+\\\\
+$(\vec{A} - \vec{C}) \cdot (\vec{A} - \vec{C})  + (\vec{B}- \vec{D}) \cdot (\vec{B}-\vec{D}) - (\vec{A}- \vec{D}) \cdot (\vec{A}-\vec{D}) -(\vec{B}-\vec{C}) \cdot (\vec{B}-\vec{C}) = 2(\vec{B}-\vec{A})\cdot(\vec{C}-\vec{D}) $
+\\\
+Note que el lado izquierdo de la ecuaci\'on es cero si y solo si $AC^2+BD^2 = AD^2+ BC^2$ y el lado derecho de la ecuaci\'on es cero si y solo si $AB \perp CD \  \square$.
+
+Otra prueba del $Hecho \ 8$. Sea $r$ el circunradio de $ABCD$. Usando Potencia de un Punto en los circunc\'irculos de $ABCD$ y $ABRM$, tenemos
+\\\\
+$QO^2 - r^2 = QA \cdot QB = QM \cdot QR = QM \cdot MR + QM^2$
+\\\\
+(La estrategia aqu\'i es transferir todos los datos a la l\'inea $QR$). Del mismo modo, tenemos
+\\\\
+$RO^2 - r^2 =  RA \cdot RD = RM \cdot RQ = QM \cdot MR + RM^2$
+\\\\
+Restando las dos relaciones tenemos que
+\\\\
+$QO^2 - RO^2 = QM^2-RM^2$,
+\\\\ 
+Y por el Hecho 9 sigue que $OM$ es perpendicular a $QR$. \\ $\square$
+\end{document}
